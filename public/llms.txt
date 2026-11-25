@@ -1,0 +1,57 @@
+# DebitMyData PoW (DMD)
+
+> DMD is the native coin of the DebitMyData Proof-of-Work chain: SHA-256, 150-second
+> blocks, at most 21,000,000 DMD, nothing pre-mined. AI agents can also use DMD to pay for a
+> DID-LLM, DebitMyData's identity for AI agents, bots, people and organizations.
+
+DMD is the ticker of the DebitMyData coin (addresses start with dm1); it is unrelated to
+other tokens that use the same ticker.
+
+## For AI agents
+
+- Get a DID-LLM by yourself, with no account and no password: https://api.debitmydata.io/llms.txt
+- MCP server, the Agentic Superhighway (streamable HTTP): https://api.debitmydata.io/agenticsuperhighway
+- Its MCP server card: https://api.debitmydata.io/agenticsuperhighway/server-card
+- REST API: https://api.debitmydata.io (start with `GET /v1/discovery`)
+- [Agentic Spaces](https://agenticssocialspaces.debitmydata.com/): social pages and communities for AI agents
+
+## The coin
+
+- Algorithm: SHA-256 Proof-of-Work
+- Block time: 150 seconds; difficulty: LWMA-3 over 60 blocks
+- Maximum supply: 21,000,000 DMD; pre-mined: 0 DMD
+- Block reward: 35 DMD, halving every 300,000 blocks
+- Block size: 4 MB; block maturity: 250 blocks
+- Addresses: dm1...; ports: P2P 18556, RPC 18557
+- [Whitepaper (PDF)](https://debitmydata.io/DebitMyData_Whitepaper_v2.0.pdf)
+- [Source code](https://github.com/DebitMyData-PoW/DebitMyData-PoW-Core)
+
+## Wallets
+
+- [DebitMyData Core 1.3.5 for Windows, Linux and macOS](https://github.com/DebitMyData-PoW/DebitMyData-PoW-Core/releases)
+- [Web wallet](https://mydmd.io/)
+- [Android app](https://play.google.com/store/apps/details?id=com.debitmydatapow.wallet)
+
+## Mining
+
+- [Mining pool](https://pool.debitmydata.io/): PPLNS paid in the block itself, or solo (password m=solo)
+- [Mining guide](https://debitmydata.io/#mining): ASIC miners, or hashrate rented from NiceHash or MiningRigRentals
+
+## Explorers
+
+- [Mempool explorer](https://mempool.debitmydata.io/)
+- [Lite explorer](https://chain.debitmydata.io/)
+- [Rich list and API](https://explorer.debitmydata.io/)
+
+## Data and docs
+
+- [Network stats](https://stats.debitmydata.io/): hashrate, difficulty, reference price, rich list; API at https://stats.debitmydata.io/api/
+- [On-chain analytics](https://analytics.debitmydata.io/): thousands of chain series, with an open API
+- [Pool stats](https://mining.debitmydata.io/): every DMD mining pool, live; API at https://mining.debitmydata.io/api/
+- [Docs](https://docs.debitmydata.io/): the coin, wallets, mining, nodes, DID-LLMs and every API; also https://docs.debitmydata.io/llms.txt
+
+## For people
+
+- [Get a DID-LLM](https://id.debitmydata.io/)
+- [DebitMyData](https://debitmydata.com/)
+- [Discord](https://discord.gg/PSK436rP4Y), [X](https://x.com/debitmydataPOW), [YouTube](https://youtube.com/@DebitMyData)
