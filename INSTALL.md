@@ -14,8 +14,9 @@ cd debitmydata-website/public
 php -S localhost:8080
 ```
 
-Then open <http://localhost:8080>. The network figures come from the public explorers, so the
-computer needs to reach the internet for them; without it, the page shows a dash instead.
+Then open <http://localhost:8080>. The network figures come from the public explorers, the Agent
+Gateway and GitHub, so the computer needs to reach the internet for them; without it, the page
+shows a dash instead (and the Core version of the downloads).
 
 ## Making it your own
 
@@ -28,9 +29,12 @@ Everything to change is at the top of two files:
   roadmap (each item `done`, `now` or `next`) and the specs.
 - **`public/stats.php`**: where the network figures come from. By default, an
   [eIquidus](https://github.com/team-exor/eiquidus) explorer for the height, hashrate and supply,
-  and a [mempool](https://github.com/mempool/mempool) explorer for the latest blocks. To try other
-  explorers without editing the file, start PHP with `DMD_EXPLORER_URL` and `DMD_MEMPOOL_URL`
-  set to their addresses.
+  a [mempool](https://github.com/mempool/mempool) explorer for the latest blocks, the
+  [Agent Gateway](https://github.com/DebitMyData-PoW/agent-gateway)'s `/v1/prices/dmd-usd` for the
+  reference price, and GitHub's tags of `DMD_CORE_REPO` for the latest Core version (the highest
+  plain version number, asked once an hour). To try other servers without editing the file, start
+  PHP with `DMD_EXPLORER_URL`, `DMD_MEMPOOL_URL`, `DMD_PRICE_API` and `DMD_GITHUB_API` set to
+  their addresses.
 
 `public/llms.txt` describes the coin for AI assistants: change its text and links too.
 

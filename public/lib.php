@@ -14,6 +14,7 @@ const POOL_FEE = '0.5%';    // keep in step with the pool's fees (dmd.sha.conf [
 const SOLO_FEE = '1%';
 const ID_SITE = 'https://id.debitmydata.io/';
 const API_DOCS = 'https://api.debitmydata.io/docs/advanced';
+const REFERENCE_PRICE = 'https://docs.debitmydata.io/data/reference-price/';
 const WHITEPAPER = '/DebitMyData_Whitepaper_v2.0.pdf';
 const EXPLORER = 'https://mempool.debitmydata.io/';
 const DISCORD = 'https://discord.gg/PSK436rP4Y';
@@ -144,6 +145,7 @@ function icon(string $name, string $class = 'ic'): string
         'key' => '<circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M16 7l3 3M14 9l2 2"/>',
         'shield' => '<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/>',
         'search' => '<circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/>',
+        'info' => '<circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 7.5h.01"/>',
         'signal' => '<path d="M5.6 6.6a9 9 0 0 0 0 12.8M18.4 6.6a9 9 0 0 1 0 12.8"/><path d="M8.5 9.5a5 5 0 0 0 0 7M15.5 9.5a5 5 0 0 1 0 7"/><circle cx="12" cy="13" r="1.5"/>',
         'out' => '<path d="M7 17L17 7M9 7h8v8"/>',
         'arrow' => '<path d="M5 12h14M13 6l6 6-6 6"/>',
@@ -571,5 +573,5 @@ function page_head(array $fonts, string $light, string $dark): string
         . '<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">'
         . $preload
         . '<script src="assets/theme.js?v=2"></script>'
-        . '<link rel="stylesheet" href="assets/site.css?v=6">';
+        . '<link rel="stylesheet" href="assets/site.css?v=7">';
 }

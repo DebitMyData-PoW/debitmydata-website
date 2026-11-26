@@ -41,6 +41,9 @@ instead of ending.</p>
 <div><dt>Network hashrate</dt><dd><span data-stat="hashrate"><?= e($stats['hashrate']) ?></span> <small data-stat="hashrate_unit"><?= e($stats['hashrate_unit']) ?></small></dd></div>
 <div><dt>DMD mined</dt><dd data-stat="supply"><?= e($stats['supply']) ?></dd></div>
 <div><dt>Block reward</dt><dd>35 <small>DMD</small></dd></div>
+<div><dt>Reference price <a class="net-info" href="<?= e(REFERENCE_PRICE) ?>" target="_blank" rel="noopener" title="Not a market price: DebitMyData's minimum rate of $0.001, or the cost of mining DMD when that is higher. It can go up or down, and the market price will replace it once DMD is listed on an exchange." aria-label="What the reference price is"><?= icon('info') ?></a></dt><dd><span data-stat="price"><?= e($stats['price']) ?></span> <small>per DMD</small></dd></div>
+<?php $coreTag = $stats['core'] ?? 'v' . $core['version']; ?>
+<div><dt>Latest Core version</dt><dd><a class="net-link" data-stat="core" data-stat-href="core_url" href="<?= e($stats['core_url'] ?? $core['releases']) ?>" target="_blank" rel="noopener"><?= e($coreTag) ?></a> <small>GitHub</small></dd></div>
 </dl>
 <div class="net-chart">
 <p class="net-sub"><span>Time between the latest blocks</span><span>average <b data-average><?= e(average_time($blocks)) ?></b></span></p>
@@ -170,6 +173,6 @@ or write to <a href="mailto:<?= CONTACT ?>"><?= CONTACT ?></a>.</p>
 </main>
 
 <?= site_footer() ?>
-<script src="assets/site.js?v=4" defer></script>
+<script src="assets/site.js?v=5" defer></script>
 </body>
 </html>

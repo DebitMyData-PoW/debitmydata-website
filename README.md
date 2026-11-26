@@ -8,9 +8,11 @@ takes people from their first wallet to their first mined DMD.
 
 ## What it shows
 
-- **The network, live**: block height, hashrate, DMD mined and the block reward, the time between
-  the latest blocks against the 150-second target, and the latest blocks with the pool that found
-  each one. The figures come from DebitMyData's public explorers and refresh by themselves.
+- **The network, live**: block height, hashrate, DMD mined, the block reward, DebitMyData's
+  [reference price](https://docs.debitmydata.io/data/reference-price/) and the latest DebitMyData
+  Core version, the time between the latest blocks against the 150-second target, and the latest
+  blocks with the pool that found each one. The figures come from DebitMyData's public explorers,
+  its Agent Gateway and GitHub, and refresh by themselves.
 - **Why DMD**: SHA-256 Proof-of-Work, nothing pre-mined, and a block reward that starts a new
   cycle once the maximum supply is reached, instead of ending.
 - **The DebitMyData ecosystem**: DMD pays for DID-LLMs, DebitMyData's verifiable identities for
@@ -29,8 +31,9 @@ takes people from their first wallet to their first mined DMD.
 
 - **Plain PHP**, three files: `index.php` lays out the page, `lib.php` holds the content (wallets,
   roadmap, specs, guides) and `stats.php` the network figures. No framework and no database.
-- **Light on the explorers**: the figures are kept for 30 seconds, so the explorers are asked at
-  most twice a minute however many people have the page open.
+- **Light on the explorers**: the figures are kept for 30 seconds, so the explorers and the
+  gateway are asked at most twice a minute however many people have the page open. The Core
+  version is kept for an hour.
 - **Nothing from other sites**: fonts, icons and scripts are served by the site itself.
 - **Light and dark themes**, in DebitMyData's Aurora design, remembered per browser.
 

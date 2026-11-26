@@ -84,6 +84,10 @@
         const value = stats[field.dataset.stat];
         if (typeof value === "string") field.textContent = value;
       }
+      for (const link of document.querySelectorAll("[data-stat-href]")) {
+        const url = stats[link.dataset.statHref];
+        if (typeof url === "string" && url.startsWith("https://github.com/")) link.href = url;
+      }
       showBlocks(stats.blocks);
     } catch {
       // offline or the explorers unreachable: the last figures stay
